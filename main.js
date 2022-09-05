@@ -22,6 +22,10 @@ function setup(){
     poseNet.on('pose',gotResults);
 }
 
+function modelLoaded(){
+    console.log("PoseNet has Initialized");
+}
+
 function gotResults(results){
     if(results.length>0){
         console.log(results);
